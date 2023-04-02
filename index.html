@@ -10,8 +10,8 @@
 
 <body>
   <h1>Comprimento</h1>
-  <input type="text" id="firstLengthValue">
-  <select id="firstLengthUnit">
+  <input type="text" id="firstLengthValue" onchange="lengthConvertion()">
+  <select id="firstLengthUnit" onchange="lengthConvertion()">
     <option value="km">quilômetro</option>
     <option value="hm">hectômetro</option>
     <option value="dam">decâmetro</option>
@@ -22,7 +22,7 @@
   </select>
   =
   <input type="text" id="secondLengthValue" disabled>
-  <select id="secondLengthUnit">
+  <select id="secondLengthUnit" onchange="lengthConvertion()">
     <option value="km">quilômetro</option>
     <option value="hm">hectômetro</option>
     <option value="dam">decâmetro</option>
@@ -32,4 +32,5 @@
     <option value="mm">milímetro</option>
   </select>
 </body>
+<script src="js/convertions.js"></script>
 </html>
